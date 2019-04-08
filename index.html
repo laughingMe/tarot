@@ -1,20 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
-    <div>
-        this is my tarot project
-<<<<<<< HEAD
-        <button id="mytarot">塔罗牌占卜</button>
-=======
-        <button id="myTarot">塔罗大事件</button>
->>>>>>> dev
-    </div>
-    <script src='./index.js'></script>
+    <script>
+        // (function(){
+        //     var t=new fn('<p><a href="{0}">{1}</p><span>{2}</span></p>');
+        //     console.log(t.format('http://www.youyou.com','youyou','Welcome'))
+        // })()
+        // (function () {
+        //     function
+        //     fn(str) {
+        //         this.str = str
+        //     }
+        //     fn.prototype.format = function () {
+        //         var arg=Array.prototype.slice.call(arguments,0)
+        //         return this.str.replace(/\{(\d+)\}/g,function (a, b) {
+        //             return arg[b] || ""
+        //         })
+        //     }
+        //     window.fn = fn
+        // })()
+        var User = {
+            count: 1,
+            getCount:function(){
+                return this.count
+            }
+        }
+        console.log(User.getCount())
+        var func = User.getCount;
+        console.log(func())
+    </script>
 </body>
+
 </html>
